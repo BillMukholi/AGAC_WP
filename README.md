@@ -8,7 +8,7 @@ AGAC is a custom WordPress theme designed specifically for a football charity. I
 - Customizable header and footer
 - Built-in WooCommerce support
 - Elementor page builder compatibility
-- Custom post types for events and donations
+- Custom post types for events
 - Support for multiple widget areas
 - Translation ready
 
