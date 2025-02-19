@@ -53,4 +53,19 @@
 				</div>
 			</div>
 		</div>
+		<div class="site-header-bottom-cont">
+			<div class="site-header-bottom">
+				<div class="site-header-bottom-fg-cont">
+				<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'header',
+							'menu_id'        => 'header',
+						)
+					);
+				?>
+				</div>
+				<div class="site-header-bottom-bg-cont"></div>
+			</div>
+		</div>
 	</header><!-- #masthead -->
