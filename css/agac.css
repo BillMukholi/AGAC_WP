@@ -120,6 +120,8 @@
   background: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  display: none;
+  opacity: 0;
 }
 .site-header-bottom-cont .site-header-bottom {
   position: relative;
@@ -152,6 +154,8 @@
 .site-header-bottom-cont .site-header-bottom .site-header-bottom-fg-cont .menu-header-container {
   position: relative;
   width: 49%;
+  display: none;
+  opacity: 0;
 }
 .site-header-bottom-cont .site-header-bottom .site-header-bottom-fg-cont .menu-header-container ul {
   padding: unset;
