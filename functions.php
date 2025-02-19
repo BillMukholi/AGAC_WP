@@ -145,6 +145,7 @@ function agac_scripts() {
 
 
 	wp_enqueue_script( 'agac-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'gsap-min', get_template_directory_uri() . '/assets/lib/gsap/gsap.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'agac-js', get_template_directory_uri() . '/js/agac.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
