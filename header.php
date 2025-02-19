@@ -26,34 +26,31 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'agac' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$agac_description = get_bloginfo( 'description', 'display' );
-			if ( $agac_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $agac_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'agac' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+		<div class="site-header-top-cont">
+			<div class="site-header-top">
+				<div class="site-header-top-left-cont">
+					<div class="site-header-top-left">
+						<div class="menu-items">
+							<span class="menu-item"></span>
+							<span class="menu-item"></span>
+							<span class="menu-item"></span>
+						</div>
+					</div>
+				</div>
+				<div class="site-header-top-center-cont">
+					<div class="site-header-top-center">
+						<div class="logo-items">
+							<img class="logo-item" src="<?php echo get_template_directory_uri().'/assets/images/logo.png'?>">
+						</div>
+					</div>
+				</div>
+				<div class="site-header-top-right-cont">
+					<div class="site-header-top-right">
+						<div class="search-items">
+							<img class="search-item" src="<?php echo get_template_directory_uri().'/assets/icons/search.svg'?>">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</header><!-- #masthead -->
